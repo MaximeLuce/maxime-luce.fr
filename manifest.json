@@ -1,0 +1,9 @@
+{
+  "name": "Maxime Luce",
+  "short_name": "Maxime Luce",
+  "description": "Site officiel de Maxime Luce, élève ingénieur et fondateur du Max de Culture.",
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "black",
+  "background_color": "white"
+} 

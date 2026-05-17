@@ -1,0 +1,45 @@
+*{
+  /* Colors */
+  --background-color:#ffffff;
+  --main-color: #D45C1C; /*#fc624d;*/
+  --main-color-opacity: rgba(212, 92, 28, 0.5);
+  --second-color: #FCE5CC; /*  FCA7A7 https://colorhunt.co/palette/18587afc624dfca7a7ffd6d6*/
+  --main-color-text: black;
+  --main-reverse-color-text: white;
+  --blockquote-text: grey;
+  --gris_clair:#dfe4ea;
+  --vert_pastel:#78e08f;
+  --rouge_pastel:#fab1a0;
+
+  /* Borders */
+  --border-width:2px;
+  --border-radius : 7px;
+
+  /* Margins */
+  --margin-paragraph : 10px;
+  --margin-divisions: 20px 0 20px 0;
+  --margin-li : 20px;
+  --margin-second-li : 40px;
+
+  /* Paddings */
+  --padding-standard:5px;
+  --padding-large: 10px;
+  --padding_boutton : 15px 12px 15px 15px;
+  --padding_liste : 20px;
+
+
+  /* Font size */
+  --interligne : 1.8em;
+  --taille_precision:0.8em;
+  --taille_texte:1em;
+  --font-size-h1:1.8em;
+  --font-size-h2:1.5em;
+  --font-size-h3:1.3em;
+  --font-size-h4:1.2em;
+
+  /* Transitions */
+  --transition-duration: .2s;
+  --transition-scale: 1.02;
+  --transition-scale-image: 1.05;
+  --transition-scale-logo: 1.15;
+}

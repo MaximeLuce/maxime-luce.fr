@@ -1,0 +1,33 @@
+footer{
+    background-color: var(--main-color);
+    color: white;
+    margin-top: var(--margin-paragraph);
+}
+footer a{
+    color: white;
+}
+footer a:hover{
+    color:var(--second-color);
+}
+footer section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1300px;
+    width: 90vw;
+    padding: 20px 0 20px 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+footer div{
+    width: 40%;
+}
+footer ul{
+    display: block;
+    width: 30%;
+    list-style: none;
+}
+footer ul li{
+    margin: var(--margin-divisions);
+}

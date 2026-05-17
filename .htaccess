@@ -1,0 +1,15 @@
+<IfModule mod_rewrite.c>
+    # On active le moteur de réécriture d'URL
+    RewriteEngine On
+
+    # Si la requête correspond à un fichier existant (ex: un logo.png ou style.css)...
+    RewriteCond %{REQUEST_FILENAME} !-f
+    
+    # ... ou à un dossier existant...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    
+    # ... alors on ne fait rien.
+    
+    # SINON, on attrape tout le reste et on l'envoie de manière invisible à index.php
+    RewriteRule ^(.*)$ index.php/$1 [QSA,L]
+</IfModule>

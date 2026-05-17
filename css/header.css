@@ -1,0 +1,105 @@
+/* REVIEW: media querries */
+header#mobile {
+  display: none;
+}
+
+/* REVIEW: // media querries */
+header {
+  /*border-bottom: 3px solid black;*/
+  /*padding: var(--margin_entre_divisions);*/
+  /*box-shadow: 0px 1px 2px -1px var(--second_color),0px 2px 2.5px 0px var(--second_color),0px 1px 2px 0px var(--second_color);*/
+  width: 100%;
+  padding-bottom: 20px;
+  /*background-image: url(../contents/banner/banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;*/
+  margin-bottom: var(--margin-paragraph);
+  background-color: var(--main-color-opacity);
+}
+
+header section {
+  margin: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+header section img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+header h1 {
+  color: var(--main-color);
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: var(--border-radius);
+  margin: var(--margin-divisions);
+  padding: 10px;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+}
+
+header h1:hover{
+  text-decoration: none;
+}
+header h1:after{
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: var(--border-width);
+  left: 50%;
+  bottom: 5px;
+  position: absolute;
+  background: var(--main-color);
+  transition: width 0.2s ease 0s, left 0.2s ease 0s;
+  width: 0;
+}
+header h1:hover:after{
+  width: 90%;
+  left: 5%;
+}
+
+header h2 {
+  color: var(--main-color);
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: var(--border-radius);
+  padding: 10px;
+}
+
+header section ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: var(--border-radius);
+  margin: var(--margin-divisions);
+}
+
+header section ul li {
+  list-style: none;
+}
+
+header section ul li a {
+  display: block;
+  margin-right: var(--margin-li);
+  margin-top: var(--margin-standard);
+  margin-bottom: var(--margin-standard);
+  color: var(--main-color);
+  transition: transform var(--transition-duration);
+  padding-top: var(--padding-standard);
+  padding-bottom: var(--padding-standard);
+}
+
+
+header section ul li a:hover {
+  color: var(--main-color);
+  transform: scale(var(--transition-scale-logo));
+}

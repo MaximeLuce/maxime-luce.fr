@@ -1,0 +1,159 @@
+/* REVIEW: commun Ã  l'ensemble des formulaires */
+::placeholder{
+    font: normal 100% 'luciole', Helvetica, sans-serif;
+    color: var(--texte_principal);
+}
+input, textarea{
+    font: normal 100% 'luciole', Helvetica, sans-serif;
+    color: var(--texte_principal);
+    padding: var(--padding_standard);
+}
+/* REVIEW: FIN commun Ã  l'ensemble des formulaires */
+/* REVIEW: TYPE 1 : ligne */
+form.ligne{
+  width: 100%;
+}
+form.ligne div.titre{
+  font-size: var(--taille_titre_h2);
+  font-weight: bold;
+}
+form.ligne div.sous_titre{
+  font-size: var(--taille_texte);
+}
+form.ligne label{
+    display: block;
+    margin-top: var(--margin_entre_paragraphes);
+    font-size: var(--taille_texte);
+}
+form.ligne input, textarea{
+  width:calc(530px - 2%);
+  font-style: normal;
+  color: var(--texte_principal);
+  margin-left: 0;
+  border-style: solid;
+  border-width: var(--taille_standard);
+  border-color: var(--bleu_lmdc);
+  border-radius: var(--taille_radius);
+  font: normal 100% 'luciole', Helvetica, sans-serif;
+}
+
+form.ligne input.envoi{
+    background-color: white;
+    display: block;
+    margin: var(--margin_entre_divisions);
+  text-align: center;
+  width:530px;
+}
+form.ligne input.envoi:hover{
+    background-color: var(--gris_clair);
+}
+/* REVIEW: FIN : TYPE 1 : ligne */
+/* //////////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////// */
+/* REVIEW: TYPE 2 : colonne */
+form.colonne{
+  width: 100%;
+  max-width: 500px;
+  margin-top: var(--margin_entre_paragraphes);
+  margin-bottom: var(--margin_entre_paragraphes);
+  margin-left: auto;
+  margin-right: auto;
+  padding: var(--padding_standard);
+  border: var(--taille_standard) solid var(--bleu_lmdc);
+  border-radius: var(--taille_radius);
+}
+
+form.colonne div{
+    text-align: center;
+}
+form.colonne div.titre{
+  font-size: var(--taille_titre_h3);
+  font-weight: bold;
+}
+form.colonne div.sous_titre{
+  font-size: var(--taille_texte);
+}
+form.colonne label{
+    display: block;
+    margin-top : var(--margin_entre_paragraphes);
+    font-size: var(--taille_texte);
+    padding: 0;
+}
+.conteneur_formulaire{
+    display: inline-block;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  outline: none;
+  border: none;
+}
+form.colonne input,form.colonne textarea,.conteneur_formulaire input{
+  width: calc(98% - 4px);
+  height: 35px;
+  font-style: normal;
+  color: var(--texte_principal);
+  font-size: var(--taille_texte);
+  margin-left: 0;
+  border-style: solid;
+  border-width: var(--taille_standard);
+  border-color: var(--bleu_lmdc);
+  margin-top :var(--margin_entre_divisions);
+  border-radius: var(--taille_radius);
+}
+
+#oeil{
+  position: absolute;
+  top: 20px;
+  right: 15px;
+}
+form.colonne input:focus,form.colonne textarea:focus,#conteneur_formulaire input:focus{
+    border-style: solid;
+    border-width: var(--taille_standard);
+    border-color: var(--bleu_profond);
+    outline: none;
+}
+
+form.colonne input.envoi{
+  margin: var(--margin_entre_divisions);
+  text-align: center;
+  box-sizing:content-box;
+}
+form.colonne input.envoi:hover{
+  border-color: var(--bleu_profond);
+}
+
+/* REVIEW: FIN : TYPE 2 : colonne */
+/* REVIEW: ESPACE COMMENTAIRE */
+form.commentaire{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: flex-end;
+}
+.commentaires{
+  margin-top: var(--margin_entre_paragraphes);
+  margin-bottom: var(--margin_entre_paragraphes);
+}
+.commentaires div.contenu{
+  margin-left: var(--margin_entre_paragraphes);
+}
+.commentaires div.contenu span{
+  font-size: var(--taille_precision);
+}
+#commentaire_contenu{
+  width: calc(98% - 4px);
+}
+.commentaire input.envoi{
+  font-weight:normal;
+  font-size:var(--taille_texte);
+  text-decoration:none;
+  color:var(--texte_principal_inverse) !important;
+  background: var(--bleu_lmdc);
+  display:inline-block;
+  padding:var(--padding_boutton);
+  transition:background 0.2s;
+  margin-top: var(--margin_entre_paragraphes);
+  border-radius:var(--taille_radius);
+}
+/* REVIEW: FIN ESPACE COMMENTAIRE */
